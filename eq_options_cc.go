@@ -89,7 +89,7 @@ func (t *SimpleChaincode) Init(stub *shim.ChaincodeStub, function string, args [
 		EntityID: entity2,
 		EntityName:	"Bank A",
 		EntityType: "Bank",
-		Portfolio: []Stock{{Symbol:"MSFT",Quantity:200},{Symbol:"AAPL",Quantity:250},{Symbol:"AMZN",Quantity:400}},
+		Portfolio: []Stock{{Symbol:"MSFT",Quantity:200},{Symbol:"AAPL",Quantity:250},{Symbol:"AMZN",Quantity:400},{Symbol:"TWTR",Quantity:350},{Symbol:"ADBE",Quantity:200},{Symbol:"NFLX",Quantity:80},{Symbol:"NVDA",Quantity:100},{Symbol:"GDDY",Quantity:180}},
 	}
 	b, err = json.Marshal(bank1)
 	if err == nil {
@@ -101,7 +101,7 @@ func (t *SimpleChaincode) Init(stub *shim.ChaincodeStub, function string, args [
 		EntityID: entity3,
 		EntityName:	"Bank B",
 		EntityType: "Bank",
-		Portfolio: []Stock{{Symbol:"GOOGL",Quantity:150},{Symbol:"AAPL",Quantity:100}},
+		Portfolio: []Stock{{Symbol:"GOOGL",Quantity:150},{Symbol:"AAPL",Quantity:100},{Symbol:"MSFT",Quantity:100},{Symbol:"TWTR",Quantity:200},{Symbol:"ADBE",Quantity:200},{Symbol:"NFLX",Quantity:100},{Symbol:"NVDA",Quantity:100},{Symbol:"GDDY",Quantity:250}},
 	}
 	b, err = json.Marshal(bank2)
 	if err == nil {
